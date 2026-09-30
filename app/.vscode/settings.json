@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "http-172-23-4-119-9000",
+        "projectKey": "simple-apps"
+    }
+}
