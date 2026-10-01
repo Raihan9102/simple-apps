@@ -1,10 +1,9 @@
 pipeline {
     agent { label 'host1-raihan' }
-    SONAR_HOST=credentials('sonar-host')
-    SONAR_TOKEN=credentials('sonar-token')
-
-
+  
     stages {
+       SONAR_HOST=credentials('sonar-host')
+       SONAR_TOKEN=credentials('sonar-token')
         stage('Pull SCM') {
             steps {
                 git branch: 'main', url: 'https://github.com/Raihan9102/simple-apps.git'
