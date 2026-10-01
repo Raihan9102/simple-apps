@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'host1-raihan' }
-    SONAR-HOST=credentials('sonar-host')
-    SONAR-TOKEN=credentials('sonar-token')
+    SONAR_HOST=credentials('sonar-host')
+    SONAR_TOKEN=credentials('sonar-token')
 
 
     stages {
@@ -37,8 +37,8 @@ pipeline {
                 sonar-scanner \
                 -Dsonar.projectKey=simple-apps \
                 -Dsonar.sources=. \
-                -Dsonar.host.url=${SONAR-HOST} \
-                -Dsonar.token=${SONAR-TOKEN}
+                -Dsonar.host.url=${SONAR_HOST} \
+                -Dsonar.token=${SONAR_TOKEN}
                 '''
             }
         }
