@@ -5,10 +5,7 @@ pipeline {
         SONAR_HOST=credentials('sonar-host')
         SONAR_TOKEN=credentials('sonar-token')
     }
-    SONAR_HOST=credentials('sonar-host')
-    SONAR_TOKEN=credentials('sonar-token')
-
-
+    
     stages {
         stage('Pull SCM') {
             steps {
